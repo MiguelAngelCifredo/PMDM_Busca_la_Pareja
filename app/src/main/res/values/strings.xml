@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Busca la Pareja</string>
+
+    <string name="ad_empezar_tit">Nueva partida</string>
+    <string name="ad_empezar_msg">¿Quieres empezar una nueva partida?</string>
+    <string name="ad_empezar_no">No</string>
+    <string name="ad_empezar_si">Sí</string>
+
+    <string name="puntos">Puntos:</string>
+    <string name="empezar">EMPEZAR</string>
+</resources>
