@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.util.TypedValue;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.gridlayout.widget.GridLayout;
 import java.util.ArrayList;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         txtPuntos = findViewById(R.id.txtPuntos);
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Crea los botones y prepara la lista de imágenes.
     private void initTablero() {
-        // 1. Cargar las 20 figuras (mantenemos tu estructura original, es la más clara)
+        // 1. Cargar las 20 figuras
         figuras = new ArrayList<>();
         figuras.addAll(Arrays.asList(R.drawable.figura01, R.drawable.figura02, R.drawable.figura03, R.drawable.figura04, R.drawable.figura05));
         figuras.addAll(Arrays.asList(R.drawable.figura06, R.drawable.figura07, R.drawable.figura08, R.drawable.figura09, R.drawable.figura10));
